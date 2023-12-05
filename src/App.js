@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import Tours from './components/Tours';
+import data from './data';
 import './App.css';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 function App() {
+  const [tours, setTours] = useState(data);
+  function removeTour(id){
+    const newTours = tours.filter(tour=>tour.id!==id);
+    setTours(newTours);
+  }
+
+  if(tours.length===0){
+    return(
+      <div className='no-tour'>
+        <h4 className='py-2'>No tour left</h4>
+        <Button className='refresh' variant='outline-primary' onClick={()=>setTours(data)}>Refresh</Button>
+      </div>
+    )
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tours tours={tours} removeTour={removeTour} />
     </div>
   );
 }
