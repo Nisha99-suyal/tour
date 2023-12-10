@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tourCards/static/css/main.8bab069d.css",
+    "main.js": "/tourCards/static/js/main.94c4df67.js",
+    "static/media/jaipur.jpg": "/tourCards/static/media/jaipur.47db8eddc64912641dbf.jpg",
+    "static/media/kasol.jpg": "/tourCards/static/media/kasol.791c2d90e3c6c13a925e.jpg",
+    "static/media/goa.jpg": "/tourCards/static/media/goa.7b2402c5fb546d8821b0.jpg",
+    "static/media/rishikesh.jpg": "/tourCards/static/media/rishikesh.10f7ae86a567de6c1334.jpg",
+    "static/media/Manali.jpg": "/tourCards/static/media/Manali.a99c605e671c08705c4a.jpg",
+    "static/media/agra.jpg": "/tourCards/static/media/agra.30af89b8618d2376de52.jpg",
+    "index.html": "/tourCards/index.html",
+    "main.8bab069d.css.map": "/tourCards/static/css/main.8bab069d.css.map",
+    "main.94c4df67.js.map": "/tourCards/static/js/main.94c4df67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bab069d.css",
+    "static/js/main.94c4df67.js"
+  ]
+}
